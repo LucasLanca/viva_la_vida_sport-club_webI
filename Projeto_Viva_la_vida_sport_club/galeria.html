@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Lucas Lança">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site oficial do Viva la vida sport club">
+    <meta name="keywords" content="Viva la vida sport club, viva la vida clube, viva la vida, clube esportivo, clube privado">
+
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"/>
+    <link type="text/css" rel="stylesheet" href="css/style.css"/>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+
+    <script type="text/javascript" src="js/materialize.js"></script>
+
+    <title> Galeria do clube</title>
+  </head>
+  <body>
+    <header class="topoAlternativo">
+      <img src="img/logo.png" alt="logo do clube">
+      <h1>Galeria de Imagens</h1>
+    </header>
+
+      <ul class="navigation">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Galeria</a></li>
+        <li><a href="tabela.html">Tabela de esportes</a></li>
+        <li><a href="cadastro.html">Cadastro</a></li>
+      </ul>
+
+    <section class="containerCarrossel">
+      <h1> Áreas do Clube: </h1>
+      <div class="carousel carousel-slider">
+         <a class="carousel-item" href="#one!"><img src="img/mural.png" alt="imagem1"></a>
+         <a class="carousel-item" href="#two!"><img src="img/recepcao.jpg" alt="imagem2"></a>
+         <a class="carousel-item" href="#three!"><img src="img/quadra_interna.jpg" alt="imagem3"></a>
+         <a class="carousel-item" href="#four!"><img src="img/piscina_interna.jpg" alt="imagem4"></a>
+         <a class="carousel-item" href="#five!"><img src="img/imagem_de_alto_1.jpg" alt="imagem5"></a>
+         <a class="carousel-item" href="#six!"><img src="img/imagem_de_alto_2.jpg" alt="imagem6"></a>
+         <a class="carousel-item" href="#seven!"><img src="img/imagem_praça.jpg" alt="imagem7"></a>
+         <a class="carousel-item" href="#eight!"><img src="img/praça_infantil.jpg" alt="imagem8"></a>
+     </div>
+    </section>
+    <br>
+    <footer class="rodape">
+      <address>
+        <p>Criador da Página: Lucas Rodrigues Lança</p>
+        <p>Email: lucas.rodrigues.lanca@gmail.com </p>
+        <p>Todos os direitos reservaods à Viva la Vida Sport Club </p>
+      </address>
+    </footer>
+
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('.carousel').carousel({
+          duration: 500,
+          shift: 50
+        })
+        $('.next').click(function(){
+            $('.carousel').carousel('next');
+        })
+        $('.prev').click(function(){
+            $('.carousel').carousel('prev');
+        })
+      })
+
+      var instance = M.Carousel.init({
+          fullWidth: true
+      })
+    </script>
+
+  </body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Lucas Lança">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site oficial do Viva la vida sport club">
+    <meta name="keywords" content="Viva la vida sport club, viva la vida clube, viva la vida, clube esportivo, clube privado">
+
+    <link type="text/css" rel="stylesheet" href="css/style.css"/>
+
+    <script type="text/javascript" src="../js/validate.js"></script>
+
+    <title> Tabela de esportes </title>
+  </head>
+  <body>
+    <header class="topoAlternativo">
+      <img src="img/logo.png" alt="logo do clube">
+      <h1>Tabela de Esportes:</h1>
+    </header>
+
+      <ul class="navigation">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="galeria.html">Galeria</a></li>
+        <li><a href="#">Tabela de esportes</a></li>
+        <li><a href="cadastro.html">Cadastro</a></li>
+      </ul>
+
+    <script type="text/javascript">
+      // Fiz algo bem básico só pra ter algo a mais do que uma simples tábela, futuramente colocaria aqui um banco de dados, ou faria um sistema melhor de cálculos
+      var futebol = 50 * 3;
+      var basquete = 60 * 3;
+      var volei = 45 * 3;
+      var natacao = 48 * 3;
+      var ginastica = 55 * 3;
+
+      function calcularFutebol() {
+        alert("Valor = " + futebol + ",00")
+      }
+      function calcularBasquete() {
+        alert("Valor = " + basquete + ",00")
+      }
+      function calcularVolei() {
+        alert("Valor = " + volei + ",00")
+      }
+      function calcularNatacao() {
+        alert("Valor = " + natacao + ",00")
+      }
+      function calcularGinastica() {
+        alert("Valor = " + ginastica + ",00")
+      }
+    </script>
+
+    <section class="container">
+      <table>
+        <tr>
+          <th>Esportes</th>
+          <th>Valor Mensal</th>
+          <th>Valor Trimestral</th>
+        </tr>
+        <tr>
+          <td>Futebol</td>
+          <td>R$50,00</td>
+          <td><input type="button" id="triFut" onclick="calcularFutebol()" value="Calcular Futebol"></td>
+        </tr>
+        <tr>
+          <td>Basquete</td>
+          <td>R$60,00</td>
+          <td><input type="button" id="triBas" onclick="calcularBasquete()" value="Calcular Basquete"></td>
+        </tr>
+        <tr>
+          <td>Vôlei</td>
+          <td>R$45,00</td>
+          <td><input type="button" id="triVol" onclick="calcularVolei()" value="Calcular Vôlei"></td>
+        </tr>
+        <tr>
+          <td>Natação</td>
+          <td>R$48,00</td>
+          <td><input type="button" id="triNat" onclick="calcularNatacao()" value="Calcular Natação"></td>
+        </tr>
+        <tr>
+          <td>Ginástica</td>
+          <td>R$55,00</td>
+          <td><input type="button" id="triGin" onclick="calcularGinastica()" value="Calcular Ginástica"></td>
+        </tr>
+      </table>
+    </section>
+    <br>
+    <footer class="rodape">
+      <address class="direitosreservados">
+        <p>Criador da Página: Lucas Rodrigues Lança</p>
+        <p>Email: lucas.rodrigues.lanca@gmail.com </p>
+        <p>Todos os direitos reservaods à Viva la Vida Sport Club </p>
+      </address>
+    </footer>
+  </body>
+</html>

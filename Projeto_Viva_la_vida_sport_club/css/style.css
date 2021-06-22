@@ -1,0 +1,373 @@
+@charset "UTF-8";
+body {
+  background-color: CornflowerBlue;
+}
+
+/* Tela com 1920X1080 */
+
+/* Index */
+
+.topo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width:100%;
+    height:48em;
+    background-image: url(../img/mural.png);
+    background-size: 100%;
+  }
+  .navigation {
+      display: flex;
+      flex-flow: row;
+      justify-content: space-evenly;
+      list-style: none;
+      font-family: sans-serif;
+      margin: 0;
+      background: PaleTurquoise;
+  }
+  .navigation a {
+      text-decoration: none;
+      display: block;
+      padding: 1em;
+      color: black;
+      font-size: 1.7em;
+  }
+  .navigation a:hover {
+      background:  LightSkyBlue;
+  }
+  .container {
+    width: 98%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    margin: 1em;
+    font-size: 1em;
+  }
+  .conteudo1 {
+    width: 35%;
+    height: 100%;
+    display: grid;
+    text-align: center;
+    font-family: sans-serif;
+    border-radius: 10px;
+    background-color: LightSkyBlue;
+  }
+  .conteudo2 {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 5%;
+  }
+  .container2 {
+    width: 98%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    margin: 1em;
+    font-size: 1em;
+  }
+  .conteudo3 {
+    width: 35%;
+    height: 100%;
+    display: grid;
+    text-align: left;
+    font-family: sans-serif;
+    border-radius: 10px;
+    background-color: LightSkyBlue;
+  }
+  .conteudo3 h2 {
+    text-align: center;
+  }
+  .conteudo4 {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    margin-left: 5%;
+  }
+  .rodape {
+    width: 100%;
+    height: 100%;
+    background-color: LightSkyBlue;
+    text-align: center;
+    font-size: 1em;
+  }
+
+  /* Galeria */
+
+  .topoAlternativo {
+    width: 100%;
+    height: 10em;
+    display: flex;
+    background-color: black;
+    color: white;
+    justify-content: flex-start;
+  }
+  .topoAlternativo h1 {
+    font-family: sans-serif;
+    font-size: 3.5em;
+    margin-left: 9em;
+  }
+  .containerCarrossel {
+    width: 95%;
+    margin: 1em;
+    display: flex;
+    justify-content: center;
+  }
+  .containerCarrossel h1 {
+    text-align: center;
+    font-family: sans-serif;
+    margin-top: 2.5em;
+  }
+  .carousel-slider {
+    width: 100%;
+    height: 500px;
+    margin-left: 2em;
+    background-color: LightSkyBlue;
+  }
+  .carousel img {
+    width: 100%;
+    height: 500px;
+    border-radius: 10%;
+  }
+
+/* Cadastro */
+
+.topoAlternativo {
+  width: 100%;
+  height: 10em;
+  display: flex;
+  justify-content: flex-start;
+}
+.topoAlternativo h1 {
+  font-family: sans-serif;
+  font-size: 3.5em;
+  margin-left: 9em;
+}
+.containerFormulario {
+  width: 60%;
+  margin: auto;
+  margin-top: 30px;
+  padding: 10px;
+  text-align: center;
+  background-color: white;
+}
+.formulario {
+  text-align: left;
+  font-family: sans-serif;
+  font-size: 1em;
+  padding: 10px;
+}
+.option {
+  display:flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+/* Tabela */
+
+.topoAlternativo {
+  width: 100%;
+  height: 10em;
+  display: flex;
+  justify-content: flex-start;
+}
+.topoAlternativo h1 {
+  font-family: sans-serif;
+  font-size: 3.5em;
+  margin-left: 9em;
+}
+table {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 70%;
+  background-color: white;
+  margin-top: 3em;
+}
+td, th {
+  border: 1px solid #ddd;
+  padding: 20px;
+}
+th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: black;
+  color: white;
+}
+
+/* Tela Tablet 768 */
+@media all and (max-width: 768px) {
+
+  /* Index */
+  .topo {
+      width:100%;
+      height:20em;
+    }
+    .navigation a {
+        text-decoration: none;
+        display: block;
+        padding: 1em;
+        color: black;
+        font-size: 1.5em;
+    }
+    .container {
+      width: 98%;
+      height: 70%;
+      display: flex;
+      justify-content: center;
+      margin: 0.5em;
+      font-size: 0.9em;
+    }
+    .container2 {
+      width: 98%;
+      height: 70%;
+      display: flex;
+      justify-content: center;
+      margin: 0.5em;
+      font-size: 0.9em;
+    }
+    .conteudo1 {
+      width: 35%;
+      height: 100%;
+      display: grid;
+      text-align: center;
+      font-family: sans-serif;
+      border-radius: 10px;
+      background-color: LightSkyBlue;
+    }
+    .conteudo2 {
+      width: 50%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      margin-left: 5%;
+    }
+    .conteudo3 {
+      width: 38%;
+      height: 100%;
+    }
+    .conteudo4 {
+      width: 50%;
+      height: 100%;
+      display: flex;
+      margin-left: 2%;
+    }
+
+    /* Galeria Tabela e Cadastro */
+
+    .topoAlternativo {
+      width: 100%;
+      height: 7em;
+      display: flex;
+      justify-content: flex-start;
+    }
+    .topoAlternativo h1 {
+      font-family: sans-serif;
+      font-size: 2.5em;
+      margin-left: 3.5em;
+    }
+    .containerCarrossel {
+      width: 90%;
+      margin: 1em;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .containerCarrossel h1 {
+      text-align: center;
+      font-family: sans-serif;
+      font-size: 2.5em;
+      margin-top: 1em;
+    }
+
+    /* Tela de Celular 480 */
+    @media all and (max-width: 480px) {
+      .topo {
+          width:100%;
+          height:12em;
+        }
+        .navigation a {
+            text-decoration: none;
+            display: block;
+            padding: 0.8em;
+            color: black;
+            font-size: 0.8em;
+        }
+        .container {
+          width: 98%;
+          height: 100%;
+          display: flex;
+          justify-content: center;
+          margin: 0.2em;
+          font-size: 0.7em;
+        }
+        .conteudo1 {
+          width: 40%;
+          height: 100%;
+          display: grid;
+          text-align: center;
+          font-family: sans-serif;
+          border-radius: 5px;
+          background-color: LightSkyBlue;
+        }
+        .conteudo2 {
+          width: 50%;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          margin-left: 5%;
+        }
+        .container2 {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          margin: 0.2em;
+          font-size: 0.7em;
+        }
+        .conteudo3 {
+          width: 100%;
+          height: 100%;
+        }
+        .conteudo4 {
+          width: 90%;
+          height: 50%;
+          display: flex;
+          margin-top: 1em;
+        }
+        .rodape {
+          font-size: 0.7em;
+        }
+
+        /* Galeria Tabela e Cadastro */
+        .topoAlternativo {
+          width: 100%;
+          height: 7em;
+          display: flex;
+          justify-content: flex-start;
+        }
+        .topoAlternativo h1 {
+          font-family: sans-serif;
+          font-size: 1.3em;
+          margin-left: 3.5em;
+        }
+        .containerCarrossel {
+          width: 95%;
+          margin: 1em;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+        }
+        .containerCarrossel h1 {
+          text-align: center;
+          font-family: sans-serif;
+          font-size: 1.5em;
+          margin-top: 1em;
+        }
+        .carousel-slider {
+          width: 90%;
+        }
+        }
+    }
